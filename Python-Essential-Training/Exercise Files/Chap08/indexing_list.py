@@ -3,6 +3,8 @@
 
 # Indexing in Python is zero-based
 
+# Add to the list:
+
 books = [
     "Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart",
     "Python for Data Analysis",
@@ -19,4 +21,32 @@ print("Suggested gift: {}.".format(books[0]))
 print(books[0])
 # insert book to specific point of the list
 books.insert(0, "Learning Python: Powerful Object-Oriented Programming")
+books[0] += " - Mark Lutz"
 print(books[0])
+
+
+# Delete from the list:
+
+books = [
+    "Learning Python: Powerful Object-Oriented Programming - Mark Lutz",
+    "Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart",
+    "Python for Data Analysis - Wes McKinney",
+    "Fluent Python: Clear, Concise, and Effective Programming - Luciano Ramalho",
+    "Python for Kids: A Playful Introduction To Programming - Jason R. Briggs",
+    "Hello Web App: Learn How to Build a Web App - Tracy Osborn",
+]
+
+print("Suggested gift: {}".format(books[0]))
+
+# remove specific item from list
+recommendation = books[0]
+del books[0]
+print(books)
+print(recommendation)
+
+# remove last item from list
+test = books.pop()
+print(test)
+
+books.pop(0)
+print(books)
